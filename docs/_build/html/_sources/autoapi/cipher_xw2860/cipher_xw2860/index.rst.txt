@@ -1,0 +1,41 @@
+:py:mod:`cipher_xw2860.cipher_xw2860`
+=====================================
+
+.. py:module:: cipher_xw2860.cipher_xw2860
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   cipher_xw2860.cipher_xw2860.cipher
+
+
+
+.. py:function:: cipher(text, shift, encrypt=True)
+
+   "
+   A function that encrypts text but replacing each letter by a letter that's a certain
+   number of positions down the alphabet.
+
+   :param text:
+   :type text: text that is going to be encrypted
+   :param shift:
+   :type shift: the number of positions down the alphabet to be used for encryption
+   :param encrypt:
+   :type encrypt: takes in boolean values, decides whether to encrypt text or not
+
+   :rtype: Newly encrypted text.
+
+   .. rubric:: Examples
+
+   >>>> import pandas as pd
+   >>>> cipher('Test', 5)
+   'Yjxy'
+
+
